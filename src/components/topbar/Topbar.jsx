@@ -15,17 +15,17 @@ export default function Topbar() {
                 <ul className="topList">
                     <li className="topListItem">
                         <Link className="link" to="/">
-                            HOME
+                            ACCUEIL
                         </Link>
                     </li>
-                    <li className="topListItem">ABOUT</li>
+                    <li className="topListItem">A PROPOS</li>
                     <li className="topListItem">CONTACT</li>
                     <li className="topListItem">
                         <Link className="link" to="/write">
-                            WRITE
+                            ECRIRE
                         </Link>
                     </li>
-                    {user && <li className="topListItem">LOGOUT</li>}
+                    {user && <li className="topListItem">SE DECONNECTER</li>}
                 </ul>
             </div>
             <div className="topRight">
