@@ -1,19 +1,14 @@
 .login {
   height: calc(100vh - 50px);
   display: flex;
-
-  width: 50px;
-  height: 150px;
-
-  padding-bottom: 10px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background: linear-gradient(
-      rgba(255, 255, 255, 0.829),
-      rgba(255, 255, 255, 0.164)
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
     ),
-    url("https://images.unsplash.com/photo-1531256379416-9f000e90aacc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80");
+    url("https://images.pexels.com/photos/768473/pexels-photo-768473.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
   background-size: cover;
 }
 
@@ -35,22 +30,21 @@
   padding: 10px;
   background-color: white;
   border: none;
-  border-radius: 10px;
-}
-
-.loginInput:focus {
-  outline: none;
 }
 
 .loginButton {
   margin-top: 20px;
   cursor: pointer;
   background-color: lightcoral;
-  color: white;
-  padding: 10px;
   border: none;
+  color: white;
   border-radius: 10px;
-  text-align: center;
+  padding: 10px;
+}
+
+.loginButton:disabled {
+  cursor: not-allowed;
+  background-color: rgb(252, 173, 173);
 }
 
 .loginRegisterButton {
@@ -59,8 +53,8 @@
   right: 20px;
   background-color: teal;
   cursor: pointer;
-  padding: 10px;
   border: none;
+  padding: 10px;
   color: white;
   border-radius: 10px;
 }
